@@ -1,0 +1,11 @@
+# MIBPR 実装とデモンストレーション
+このプログラムはBaysiean Perosnalized Ranking(BPR)に画像処理と自然言語処理と統計手法を利用した MIBPRの実装が含まれる．
+BPRのランキング学習のペアワイズ手法と自然言語Glove，ELMoは各自コードを参照し，デモについてはJupyterノートブックを参照．
+詳細はこのモデルを論文にしたTanakaShinji_Reiwa2_Sotsuron.pdfを参照すること．
+
+## Setup
+このプログラムを実行するためのパッケージとPython3をインストールする必要がある．必要パッケージはrequirements.txtを参照すること．
+また，画像処理はMATLABを利用して作成しているため，自身で作成する場合は，オートエンコーダーなどを利用して行うこと．また，統計手法についてはスタージェスの公式を利用してデータを加工する．このファイルには記載しない．
+本プログラムは非線形かつコールドスタートであるTradesy.comのファッションデータをユーザに
+レコメンドするシステムである．事前にスクレイピングし，処理を行ったデータをmaindata_256996を私のGoogle Driveに配置する．下記のURLから保存が可能である．
+https://drive.google.com/file/d/1pYRPAQk1xU7_GefPi6kvjxWOAaTTbGbB/view?usp=sharing
